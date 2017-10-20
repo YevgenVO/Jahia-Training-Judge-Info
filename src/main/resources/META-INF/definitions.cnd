@@ -1,0 +1,11 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[jnt:judgeInformation] > jnt:content, mix:title, jmix:structuredContent
+ - jcr:title (string) internationalized
+ - jcr:firstname (string) internationalized
+ - jcr:lastname (string) internationalized
+ - photo (weakreference, picker[type='image'])
+ - biogtaphy (string, richtext) internationalized
+
