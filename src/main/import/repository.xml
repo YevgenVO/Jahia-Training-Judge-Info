@@ -16,25 +16,16 @@
                      jcr:primaryType="jnt:folder">
                             <resources jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
                              jcr:primaryType="jnt:folder">
-                                <yns_judgeTable jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                <yns_judgeTable jcr:mixinTypes="jmix:hasExternalProviderExtension"
                                      jcr:primaryType="jnt:nodeTypeFolder">
-                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
                               jcr:primaryType="jnt:templateTypeFolder">
-                                        <judgeTable.Info.properties jcr:mixinTypes="jmix:sourceControl"
-                                                       jcr:primaryType="jnt:propertiesFile"/>
+                                        <judgeTable.Info.properties jcr:primaryType="jnt:propertiesFile"/>
                                     </html>
                                 </yns_judgeTable>
-                                <jnt_judgeInformation jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                                           jcr:primaryType="jnt:nodeTypeFolder">
-                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
-                              jcr:primaryType="jnt:templateTypeFolder">
-                                        <judgeInformation.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
-                                    </html>
-                                </jnt_judgeInformation>
-                                <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension jmix:sourceControl"
+                                <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension"
                                jcr:primaryType="jnt:metaInfFolder">
-                                    <definitions.cnd jcr:mixinTypes="jmix:sourceControl"
-                                         jcr:primaryType="jnt:definitionFile"/>
+                                    <definitions.cnd jcr:primaryType="jnt:definitionFile"/>
                                 </META-INF>
                             </resources>
                         </main>
