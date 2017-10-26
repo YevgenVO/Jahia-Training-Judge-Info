@@ -1,11 +1,20 @@
 <jmix = 'http://www.jahia.org/jahia/mix/1.0'>
 <jnt = 'http://www.jahia.org/jahia/nt/1.0'>
-<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+<yns = 'http://yevgen.com/namespace'>
 
-[jnt:judgeInformation] > jnt:content, mix:title, jmix:structuredContent
- - jcr:title (string) internationalized
- - jcr:firstname (string) internationalized
- - jcr:lastname (string) internationalized
+[yns:judgeInform] > jnt:content, jmix:structuredContent orderable
+ - name (string)
+ - Surname (string)
+ - yearInOffice (decimal, text)
+ - yearOfRegistration (decimal, text)
+ - canton (string)
+ - partyBirth (date, datepicker)
+ - court (string, choicelist) < 'CC', 'Ire CdS', 'IIe CdS', 'Ire CC', 'IIe CdP', 'Ire CdP', 'CdP + A', 'I. ZirA', 'CdP', 'CCP', 'StrA', 'II. ZirA', 'IIe CC'
+ - parti (string, choicelist) < 'KK', 'PAI', 'DEM', 'PLS', 'PS', 'PRD', 'PDC', 'UDC', 'LDU'
+ - deathDate (date, datepicker)
  - photo (weakreference, picker[type='image'])
- - biogtaphy (string, richtext) internationalized
+ - biography (string, richtext) internationalized
 
+[yns:judgeTable] > jnt:content, jmix:structuredContent
+
+[yns:judgeInfo2] > jnt:content, jmix:structuredContent

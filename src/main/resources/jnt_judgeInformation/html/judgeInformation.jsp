@@ -24,7 +24,9 @@
 <h3>${fullname}</h3>
 <br>
 <c:set var="photo" value="${currentNode.properties['photo']}"/>
-<c:url value="${photo.node.url}" var="imgUrl"></c:url>
-<img src="${imgUrl}" width="300px"/>
+<c:url value="${photo.node.url}" var="imgUrl"/>
+<c:if test = "${imgUrl} != null">
+    <img src="${imgUrl}" width="300px"/>
+</c:if>
 
 <p>${currentNode.properties['biogtaphy'].string}</p>
